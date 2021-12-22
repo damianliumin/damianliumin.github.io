@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/font-opensans.css" rel="stylesheet">
+    <link href="css/font-Montserrat.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link href="https://at.alicdn.com/t/font_2745379_3gf2ob9z2x4.css" rel="stylesheet">
+
+    <style>
+        /* postcard */
+        #postcard {
+            background-color: white;
+            position: fixed;
+            top: 70px;
+            left: 30px;
+            height: 500px;
+            width: 250px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 0 10px #ddd;
+            border-radius: 6px;
+        }
+
+        #profile {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            border-radius: 15px;
+            border:white 4px solid;
+            width:180px;
+            height:180px;
+            background: url("figs/profile.jpg") no-repeat center;
+            background-size:contain;
+            z-index: 2;
+        }
+
+        #postcard-curtain {
+            position: absolute;
+            background-color: #4d4d4d;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 125px;
+            width: 248px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            z-index: 1;
+        }
+
+        #postcard-info {
+            position: absolute;
+            top: 240px;
+            bottom: 35px;
+            left: 20px;
+            right: 20px;
+        }
+
+        #postcard-info div {
+            margin: 0;
+            font-family: Open Sans, sans-serif, Arial;
+            text-align: center;
+        }
+
+        #postcard-info p:hover {
+            color:rgb(102, 102, 102);
+        }
+
+        /* container */
+        main {
+            margin-top: 70px; 
+            margin-left:310px; 
+            margin-right: 35px;
+            padding: 0px;
+        }
+
+        .container-resume {
+            margin-left: 0px;
+            color: #4d4d4d;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgb(200, 200, 200);
+        }
+        
+        .container-resume h1 {
+            font-family: Open Sans, Arial, Helvetica, sans-serif;;
+            font-size: 25px;
+            color: #4d4d4d;
+        }
+
+        .container-resume li {
+            margin-bottom: 10px;
+        }
+
+        .resume-item-heading {
+            position: relative;
+            /* height: 28px; */
+        }
+
+        .resume-item-heading a {
+            text-decoration: none;
+            color: #4d4d4d;
+        }
+
+        .resume-item-heading a:hover {
+            color: cadetblue;
+        }
+
+        .resume-item-title {
+            font-size: 18px;
+            margin-right: 110px;
+            left: 0;
+        }
+
+        .resume-item-time {
+            font-size: 16px;
+            font-style: italic;
+            position: absolute;
+            top: 3px;
+            right: 0;
+            color:rgb(148, 148, 148);
+        }
+
+        .resume-item-body {
+            position: relative;
+            color: #646464;
+        }
+
+    </style>
+
+
+</head>
+<body lang="en">
+
+    <!-- navigator -->
+    <nav class="fixed-top">
+        <div id="header">
+            <a href="index.html">
+                <div class="header-title">Damian's Wiki</div>
+            </a>
+            <div class="header-title"></div>
+            <a href="index.html">
+                <div class="header-item">HOME</div>
+            </a>
+            <a href="academic.html">
+                <div class="header-item">ACADEMIC</div>
+            </a>
+            <a href="projects.html">
+                <div class="header-item">PROJECTS</div>
+            </a>
+            <a href="archives.html">
+                <div class="header-item">ARCHIVES</div>
+            </a>
+            <a href="about.html">
+                <div class="header-item">ABOUT</div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- page content -->
+    <div id="postcard">
+        <div id="postcard-curtain"></div>
+        <div id="profile"></div>
+        <div id="postcard-info">
+            <div style="font-size: 30px; font-weight: 500; color: #4d4d4d">
+                Damian Liu
+            </div>
+            <div style="font-family: Ma Shan Zheng, FangSong ;font-size: 25px; color: #4d4d4d">
+                刘闵
+            </div>
+            <div style="font-size:15px; color:rgb(148, 148, 148); margin-top: 15px;">
+                <p style="margin-bottom:6px;"><i class="iconfont icon-map"></i> Location: </p>
+                <p style="margin-bottom:10px;">Nanjing, Jiangsu</p>
+                <p style="margin-bottom:6px;"><i class="iconfont icon-email"></i> E-mail: </p>
+                <p style="margin-bottom:8px; font-size:13px">191240030@smail.nju.edu.cn</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex-shrink-0">
+        <div class="container container-resume" position="relative">
+            <h1>Education</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="https://dii.nju.edu.cn/">Kuang Yaming Honors School, Nanjing University</a></div>
+                        <div class="resume-item-time">2019.9 - &emsp;&emsp;&emsp;</div>
+                    </div>
+                    <div class="resume-item-body">
+                        B.S., Computer Science
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="http://www.hjzx.net/front/index">Hanjiang High School</a></div>
+                        <div class="resume-item-time">2016.9 - 2019.6</div>
+                    </div>
+                    <div class="resume-item-body">
+                        High School Education
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container container-resume" position="relative">
+            <h1>Research Experiences</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="academic.html">Kenan-Flagler Business School, UNC-Chapel Hill</a></div>
+                        <div class="resume-item-time">2021.5 - &emsp;&emsp;&emsp;</div>
+                    </div>
+                    <div class="resume-item-body">
+                        I worked as research assistance for Professor Yuqian Xu. I was responsible for data processing, data mining and model building in 3 econometrics projects.
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="academic.html">Institute of Computer Software, Nanjing University</a></div>
+                        <div class="resume-item-time">2020.9 - 2021.5</div>
+                    </div>
+                    <div class="resume-item-body">
+                        Supervised by Professor Yuan Yao, I focused on defense against Trojan Attack, which was a new field in security of deep neural networks.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container container-resume" position="relative">
+            <h1>Publications</h1>
+            <hr>
+            (TBD)
+        </div>
+
+        <div class="container container-resume" position="relative">
+            <h1>Projects</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="projects.html">Graph Library</a></div>
+                        <div class="resume-item-time">2021.3 - 2021.6</div>
+                    </div>
+                    <div class="resume-item-body">
+                        A C++ library for graph models and algorithms.
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="projects.html">NANOS</a></div>
+                        <div class="resume-item-time">2021.3 - 2021.7</div>
+                    </div>
+                    <div class="resume-item-body">
+                        A multiprocessor operating system.
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title"><a href="projects.html">NEMU x86</a></div>
+                        <div class="resume-item-time">2020.9 - 2021.1</div>
+                    </div>
+                    <div class="resume-item-body">
+                        NJU EMUlator, a full system x86 emulator.
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="container container-resume" position="relative">
+            <h1>School Activities</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Peer tutor for freshmen (2021)</div>
+                        <div class="resume-item-time">2021.9 - &emsp;&emsp;&emsp;</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">MIT Machine Learning on Business Analysis Online Program</div>
+                        <div class="resume-item-time">2021.8</div>
+                    </div>
+                </li>
+                <li>
+                    
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Nanfeng online supporting education</div>
+                        <div class="resume-item-time">2020.7</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Volunteer in Yunjin Museum, Nanjing</div>
+                        <div class="resume-item-time">2019.10</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Member of Department of Liaison, Students' Union in KYM</div>
+                        <div class="resume-item-time">2019.9 - 2020.6</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container container-resume" position="relative">
+            <h1>Honors</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Silver medal in the 16th Nanjing Univesity Programming
+                            Contest (div 2)</div>
+                        <div class="resume-item-time">2021.6</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">Scholarship for outstanding students in fundamental science (First Prize)</div>
+                        <div class="resume-item-time">2020.11</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-heading">
+                        <div class="resume-item-title">People's Scholarship (First Prize)</div>
+                        <div class="resume-item-time">2020.11</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container container-resume" position="relative">
+            <h1>Hobbies</h1>
+            <hr>
+            <ul>
+                <li>
+                    <div class="resume-item-body">
+                        Er...I am interested in almost everything, and have an open mind to new things. I practiced sketch, painting and piano for a few years when I was a teenager. Maybe one day I should carry on with art and music.
+                    </div>
+                </li>
+                <li>
+                    <div class="resume-item-body">
+                        Currently, I'm fascinated by the charm of technology and mathematics and devote most of my time to them (lucky to find a career that I love). Besides, I enjoy jogging and badminton (good heath is my priority). I'm also trying to explore more interesting sports. Sometimes I watch  movies and TV series to relax. Maybe I can add a movie list to my homepage in the future. TV series can only be enjoyed on holiday since I can never stop when I begin to watch them. Recently, I am reading a popular science fiction: The Three Body Problem, which really a masterpiece in this field. Some people also recommend Asimov to me. I want to read some of his works next semester.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+
+</body>
