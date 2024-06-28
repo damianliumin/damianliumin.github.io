@@ -8,18 +8,20 @@ body {
 
 a {
   /* color: #305b81; */
-  color: #176a9d;
+  color: #2083c0;
   text-decoration: none;
 }
 
 a:hover {
   /* color:rgb(197, 139, 92); */
-  color:rgb(106, 0, 95);
+  /* color:rgb(106, 0, 95); */
+  color: #fb8b05;
   /* color: #B01C33; */
 }
 
 heading {
   font-size: 22px;
+  /* color: #fb8b05; */
 }
 
 papertitle {
@@ -40,5 +42,5 @@ note {
 highlight {
   /* color:	#B01C33; */
   /* color: #305b81; */
-  color: #176a9d;
+  color: #2083c0;
 }
